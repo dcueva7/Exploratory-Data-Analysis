@@ -51,6 +51,9 @@ average_high_year = df.groupby(pd.PeriodIndex(df['Timestamp'], freq= "Y"))['High
 #get series for volume per month
 volume_per_month = df.groupby(pd.PeriodIndex(df['Timestamp'], freq='M'))['Volume_(BTC)'].mean()
 
+average_high_month.plot()
+
+average_high_year.plot()
 
 volume_per_month.plot()
 
